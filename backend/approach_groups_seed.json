@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Array/Search Techniques",
+    "tags": [
+      "binary search",
+      "sortings",
+      "two pointers"
+    ]
+  },
+  {
+    "name": "Graph/Recursive Techniques",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "graphs"
+    ]
+  },
+  {
+    "name": "Data Structure Techniques",
+    "tags": [
+      "data structures",
+      "dsu",
+      "trees"
+    ]
+  },
+  {
+    "name": "Math/Combinatorics Techniques",
+    "tags": [
+      "bitmasks",
+      "combinatorics",
+      "number theory"
+    ]
+  }
+]

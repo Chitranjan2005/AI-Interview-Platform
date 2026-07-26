@@ -1,0 +1,1630 @@
+[
+  {
+    "title": "Monocarp and the Set",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "combinatorics",
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1886/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Getting Deals Done",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1070/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Good Subarrays (Hard Version)",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1736/C2",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "\u0410\u0432\u0442\u043e\u0431\u0443\u0441",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/649/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Control of Randomness",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "combinatorics",
+      "dfs and similar",
+      "dp",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2040/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Serval and Music Game",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dp",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1789/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Choosing Balls",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/264/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Explosions?",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1795/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Random Function and Tree",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "combinatorics",
+      "dp",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/482/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "An easy problem about trees",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dp",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/457/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Binary Tree on Plane",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/277/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Digital Village (Easy Version)",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "data structures",
+      "dfs and similar",
+      "dp",
+      "dsu",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2021/E1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Graph And Numbers",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "bitmasks",
+      "combinatorics",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1221/G",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Math Test",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1622/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Access Levels",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "bitmasks",
+      "dsu"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1765/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "New Year Letter",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "bitmasks",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/379/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "No Cost Too Great (Hard Version)",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2154/C2",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Digits",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dp",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1510/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Divisor Tree",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "number theory",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/337/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Prime Gift",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "dfs and similar",
+      "number theory",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/912/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Eating",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "bitmasks",
+      "data structures",
+      "dp",
+      "trees",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2064/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "K for the Price of One (Easy Version)",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dp",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1282/B1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Solitaire",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/208/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Sleeping Schedule",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1324/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Rorororobot",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1709/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Han Solo and Lazer Gun",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/514/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Producing Snow",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/923/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Enemy is weak",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "data structures",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/61/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "String Modification",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1316/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Nastya Is Transposing Matrices",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1136/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Olympiad",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "sortings",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/222/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Wooden Toy Festival",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1840/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Unusual Entertainment",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "data structures",
+      "dfs and similar",
+      "dsu",
+      "sortings",
+      "trees",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1899/G",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Array Game",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1600/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Convenient For Everybody",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/939/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Queries about less or equal elements",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "sortings",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/600/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Split",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2148/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "PolandBall and Game",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/755/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "ABBB",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1428/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Even Positions",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "data structures"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1997/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Deletion Sort",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2200/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Cubes Sorting",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1420/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Kamilka and the Sheep",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "number theory",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2092/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Wonderful Gloves",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2096/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "The Potion of Great Power",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "graphs",
+      "sortings",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1403/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Group Photo",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1517/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Maximum Sine",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1182/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Odd Mineral Resource",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "bitmasks",
+      "data structures",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1479/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Ice Cream Balls",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "combinatorics"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1862/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Pashmak and Flowers",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "combinatorics",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/459/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Ralph And His Magic Field",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "combinatorics",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/894/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "New Year Santa Network",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "combinatorics",
+      "dfs and similar",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/500/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Valid BFS?",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1037/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Party",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1711/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Quantity of Strings",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "combinatorics",
+      "dfs and similar",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/150/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Fun with Integers",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1062/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Half of Same",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1593/D2",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Vlad and an Odd Ordering",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "bitmasks",
+      "data structures",
+      "dp",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1926/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Hacking Cypher",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/490/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Shifting String",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "graphs",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1690/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Interesting Array",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "data structures",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/482/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Okabe and Boxes",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "data structures",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/821/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Spiders",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dp",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/120/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Add on a Tree",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1188/A1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Laura and Operations",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1900/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Red-Black Pairs",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2225/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Subsequence Addition (Hard Version)",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks",
+      "dp",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1807/G2",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "MIN-MEX Cut",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1566/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Rudolf and the Ball Game",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dfs and similar",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1941/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "DZY Loves Chessboard",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dfs and similar"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/445/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Bmail Computer Network",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dfs and similar",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1057/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Reposts",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dfs and similar",
+      "dp",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/522/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Sherlock and his girlfriend",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/776/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Exciting Bets",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1543/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Different Divisors",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1474/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Potion-making",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1525/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Simple Palindrome",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "combinatorics"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2005/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "AI Finds Nothing Here",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "combinatorics"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2240/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Lucky Numbers",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "combinatorics"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/630/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Permutation Warm-Up",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "combinatorics"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2108/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Range Sorting (Easy Version)",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "dp",
+      "dsu",
+      "trees",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1827/B1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Tourism",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dfs and similar",
+      "dp",
+      "dsu",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1220/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "School",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dp",
+      "dsu"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/45/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Groceries in Meteor Town",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "dsu",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1628/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Party",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "bitmasks",
+      "dp",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/906/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Best Time to Buy and Sell Stock",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2156/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Coffee Varieties (hard version)",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1290/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Instant Noodles",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "graphs",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1322/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Dora's Paint",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "combinatorics",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2006/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Dominoes",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "combinatorics"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1773/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Ela Goes Hiking",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "combinatorics",
+      "dp"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1737/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Two Arrays",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "bitmasks",
+      "combinatorics",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1641/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Yet Another Yet Another Task",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "data structures",
+      "dp",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1359/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Cyclic Cipher",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "data structures",
+      "number theory",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/722/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Twilight and Ancient Scroll (harder version)",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dp",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1393/E2",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "There Should Be a Lot of Maximums",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "data structures",
+      "dfs and similar",
+      "dp",
+      "trees",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1805/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "PermuTree (easy version)",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "dp",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1856/E1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Tree Tag",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "dp",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1404/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Tree Orientation (Easy Version)",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2208/D1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Two Fairs",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "combinatorics",
+      "dfs and similar",
+      "dsu",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1276/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Chloe and the sequence ",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/743/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Earning on Bets",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "combinatorics",
+      "number theory"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1979/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Flower City Fence",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1862/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Rank List",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/166/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "The Meeting Place Cannot Be Changed",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dfs and similar",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/982/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Cow and Vacation",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dfs and similar",
+      "dsu",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1307/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Fair Share",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "data structures",
+      "dfs and similar",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1634/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Ehab's Last Corollary",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "dfs and similar",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1364/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Discrete Acceleration",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "dp",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1408/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Lonely Numbers",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "number theory",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1423/K",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Valhalla Siege",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/975/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Changing the String",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2111/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "DZY Loves Chemistry",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dfs and similar",
+      "dsu"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/445/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Rae Taylor and Trees (easy version)",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "dp",
+      "dsu",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2171/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Social Network",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dsu",
+      "graphs",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1609/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Sorting the Coins",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "dsu",
+      "sortings",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/875/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "k-Interesting Pairs Of Integers",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/769/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Undoubtedly Lucky Numbers",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "bitmasks",
+      "dfs and similar"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/244/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Edge Weight Assignment",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "bitmasks",
+      "dfs and similar",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1338/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Blackslex and Penguin Civilization",
+    "category": "DSA",
+    "difficulty": "Medium",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2179/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Hemose Shopping",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dsu",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1592/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "The Lakes",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dfs and similar",
+      "dsu",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1829/E",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Equal or Not Equal",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dsu"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1620/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Books Exchange (easy version)",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dsu"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1249/B1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Bouquet (Easy Version)",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "binary search",
+      "sortings",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1995/B1",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Rakhsh's Revival",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "data structures",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2034/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Balanced Team",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "sortings",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1133/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Subtract Operation",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "data structures",
+      "two pointers"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1656/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Cyclic Shifts Sorting",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1374/F",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Learning to Paint",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "binary search",
+      "data structures",
+      "dfs and similar",
+      "dp",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1942/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Time to Raid Cowavans",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "data structures",
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/103/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Array sorting",
+    "category": "DSA",
+    "difficulty": "Hard",
+    "approachTags": [
+      "sortings"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/130/I",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Almost Ternary Matrix",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1699/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Beautiful XOR",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2162/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Ancient Civilization",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1625/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Creating Keys for StORages Has Become My Main Skill",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "bitmasks"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2072/C",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Rook, Bishop and King",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/370/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Destroying Bridges",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1944/A",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Students and Shoelaces",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "dfs and similar",
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/129/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Vicious Labyrinth",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "graphs"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/2078/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Apple Tree",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "combinatorics",
+      "dfs and similar",
+      "dp",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1843/D",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Begginer's Zelda",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1905/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Omkar and Heavenly Tree",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1583/B",
+    "idealAnswerNotes": ""
+  },
+  {
+    "title": "Yet Another Card Deck",
+    "category": "DSA",
+    "difficulty": "Easy",
+    "approachTags": [
+      "data structures",
+      "trees"
+    ],
+    "sourceUrl": "https://codeforces.com/problemset/problem/1511/C",
+    "idealAnswerNotes": ""
+  }
+]
