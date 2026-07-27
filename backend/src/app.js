@@ -19,8 +19,10 @@ app.use(cookieParser());
 //routers
 import practiceRouter from "./routes/practice.routes.js";
 import userRouter from "./routes/user.route.js";
+import sheetRouter from "./routes/sheet.routes.js";
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/practice", practiceRouter);
+app.use("/api/v1/sheets", sheetRouter);
 
 export { app };
