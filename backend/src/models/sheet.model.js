@@ -7,10 +7,6 @@ const sheetSchema = new mongoose.Schema(
             required: true,
             trim: true,
         },
-        description: {
-            type: String,
-            default: "",
-        },
         category: {
             type: String,
             enum: ["DSA", "System Design"],
@@ -21,12 +17,11 @@ const sheetSchema = new mongoose.Schema(
             enum: ["Easy", "Medium", "Hard"],
             required: true,
         },
-        slots: [
-            {
-                type: String,
-                required: true,
-            },
-        ],
+        slotCount: {
+            type: Number,
+            required: true,
+            default: 2,
+        },
     },
     { timestamps: true }
 );

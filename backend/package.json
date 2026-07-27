@@ -8,7 +8,8 @@
     "start": "node server.js",
     "format": "prettier --write .",
     "seed:questions": "node src/seeds/question.seed.js",
-    "seed:groups": "node src/seeds/approachGroup.seed.js"
+    "seed:groups": "node src/seeds/approachGroup.seed.js",
+    "seed:sheets": "node src/seeds/sheet.seed.js"
   },
   "keywords": [],
   "author": "",
