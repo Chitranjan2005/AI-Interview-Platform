@@ -52,7 +52,7 @@ const registerUser = asyncHandler(async (req, res, next) => {
         throw new ApiError(500, "Somthing went wrong, User creation failed")
      }
 
-     res.status(200).json(
+     res.status(201).json(
         new ApiResponse(201, createdUser, "User created successfully")
      )
 })
@@ -127,5 +127,49 @@ const logoutUser = asyncHandler(async(req, res) => {
     .clearCookie("refreshToken", options)
     .json(new ApiResponse(200, {}, "User logged Out"))
 })
+const changePassword = asyncHandler(async (req, res) => {
+    const { oldPassword, newPassword } = req.body;
 
-export { registerUser, loginUser, logoutUser };
+    if (!oldPassword || !newPassword) {
+        throw new ApiError(400, "Old and new password are required");
+    }
+
+    const user = await User.findById(req.user._id);
+
+    const isPasswordValid = await user.isPasswordCorrect(oldPassword);
+    if (!isPasswordValid) {
+        throw new ApiError(401, "Old password is incorrect");
+    }
+
+    user.password = newPassword; // pre("save") hook will hash it automatically
+    await user.save({ validateBeforeSave: false });
+
+    return res
+        .status(200)
+        .json(new ApiResponse(200, {}, "Password changed successfully"));
+});
+
+const changeUsername = asyncHandler(async (req, res) => {
+    const { newUsername } = req.body;
+
+    if (!newUsername?.trim()) {
+        throw new ApiError(400, "New username is required");
+    }
+
+    const existingUser = await User.findOne({ username: newUsername.toLowerCase() });
+    if (existingUser) {
+        throw new ApiError(409, "Username already taken");
+    }
+
+    const user = await User.findByIdAndUpdate(
+        req.user._id,
+        { $set: { username: newUsername.toLowerCase() } },
+        { new: true }
+    ).select("-password -refreshToken");
+
+    return res
+        .status(200)
+        .json(new ApiResponse(200, user, "Username updated successfully"));
+});
+
+export { registerUser, loginUser, logoutUser, changePassword, changeUsername };

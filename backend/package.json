@@ -9,7 +9,8 @@
     "format": "prettier --write .",
     "seed:questions": "node src/seeds/question.seed.js",
     "seed:groups": "node src/seeds/approachGroup.seed.js",
-    "seed:sheets": "node src/seeds/sheet.seed.js"
+    "seed:sheets": "node src/seeds/sheet.seed.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
@@ -19,14 +20,16 @@
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
+    "dotenv": "^16.4.5",
     "express": "^5.2.1",
     "groq-sdk": "^1.4.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.8.0"
   },
   "devDependencies": {
+    "jest": "^30.4.2",
     "nodemon": "^3.1.14",
-    "prettier": "^3.9.6"
+    "prettier": "^3.9.6",
+    "supertest": "^7.2.2"
   }
 }
