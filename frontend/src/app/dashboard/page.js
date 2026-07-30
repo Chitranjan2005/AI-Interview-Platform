@@ -4,21 +4,17 @@ import { useEffect, useState } from "react";
 import { apiFetch } from "@/lib/api";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
-export default function DashboardPage() {
+function DashboardContent() {
     const [sheets, setSheets] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
-    const { user, loading: authLoading } = useAuth();
+    const { user } = useAuth();
     const router = useRouter();
 
     useEffect(() => {
-        if (!authLoading && !user) {
-            router.push("/login");
-            return;
-        }
-
         async function fetchSheets() {
             try {
                 const res = await apiFetch("/sheets");
@@ -30,10 +26,10 @@ export default function DashboardPage() {
             }
         }
 
-        if (user) fetchSheets();
-    }, [user, authLoading, router]);
+        fetchSheets();
+    }, []);
 
-    if (authLoading || loading) return <p style={{ padding: "40px" }}>Loading...</p>;
+    if (loading) return <p style={{ padding: "40px" }}>Loading...</p>;
     if (error) return <p style={{ padding: "40px", color: "red" }}>{error}</p>;
 
     return (
@@ -43,14 +39,7 @@ export default function DashboardPage() {
 
             <div style={{ display: "grid", gap: "16px", marginTop: "24px" }}>
                 {sheets.map((sheet) => (
-                    <div
-                        key={sheet._id}
-                        style={{
-                            border: "1px solid #ccc",
-                            borderRadius: "8px",
-                            padding: "16px",
-                        }}
-                    >
+                    <div key={sheet._id} style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "16px" }}>
                         <h3>{sheet.name}</h3>
                         <p>Difficulty: {sheet.difficulty}</p>
                         <button
@@ -63,5 +52,13 @@ export default function DashboardPage() {
                 ))}
             </div>
         </div>
+    );
+}
+
+export default function DashboardPage() {
+    return (
+        <ProtectedRoute>
+            <DashboardContent />
+        </ProtectedRoute>
     );
 }

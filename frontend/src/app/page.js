@@ -1,10 +1,22 @@
+"use client";
+
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
+
 export default function Home() {
-    return (
-        <div style={{ textAlign: "center", marginTop: "100px" }}>
-            <h1>AI Interview Prep Platform</h1>
-            <p>
-                <a href="/login">Log in</a> or <a href="/signup">Sign up</a>
-            </p>
-        </div>
-    );
+    const { user, loading } = useAuth();
+    const router = useRouter();
+
+    useEffect(() => {
+        if (loading) return;
+
+        if (user) {
+            router.replace("/dashboard");
+        } else {
+            router.replace("/login");
+        }
+    }, [user, loading, router]);
+
+    return <p style={{ padding: "40px", textAlign: "center" }}>Loading...</p>;
 }

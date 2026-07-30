@@ -5,14 +5,24 @@ import { useRouter } from "next/navigation";
 import { apiFetch } from "@/lib/api";
 import { useAuth } from "@/context/AuthContext";
 
+
 export default function LoginPage() {
+
+    
     const [identifier, setIdentifier] = useState(""); // username or email
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
 
+    // const { user, loading: authLoading } = useAuth();
     const router = useRouter();
     const { login } = useAuth();
+    
+//     useEffect(() => {
+//     if (!authLoading && user) {
+//         router.replace("/dashboard");
+//     }
+// }, [user, authLoading, router]);
 
     async function handleLogin(e) {
         e.preventDefault();
