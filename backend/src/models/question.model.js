@@ -31,6 +31,28 @@ const questionSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    generatedStatement: {
+            statement: { 
+              type: String, default: ""
+             },
+            inputFormat: { 
+              type: String, default: ""
+             },
+            outputFormat: { 
+              type: String, default: ""
+             },
+            constraints: { 
+              type: String, default: ""
+
+             },
+            examples: [
+                {
+                    input: String,
+                    output: String,
+                    explanation: String,
+                },
+            ],
+        },
   },
   { timestamps: true }
 );

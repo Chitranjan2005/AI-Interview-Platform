@@ -10,7 +10,8 @@
     "seed:questions": "node src/seeds/question.seed.js",
     "seed:groups": "node src/seeds/approachGroup.seed.js",
     "seed:sheets": "node src/seeds/sheet.seed.js",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+    "enrich:questions": "node src/seeds/enrichQuestions.seed.js"
   },
   "keywords": [],
   "author": "",
