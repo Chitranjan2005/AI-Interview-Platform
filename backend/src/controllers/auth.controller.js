@@ -3,6 +3,8 @@ import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { User } from "../models/user.model.js";
 import jwt from "jsonwebtoken";
+import { sendOtpEmail } from "../utils/sendEmail.js";
+import { generateOtp } from "../utils/generateOtp.js";
 
 
 const generateAccessAndRefreshToken = async (userId) => {
@@ -21,42 +23,145 @@ const generateAccessAndRefreshToken = async (userId) => {
   }
 }
 
-const registerUser = asyncHandler(async (req, res, next) => {
-
+const registerUser = asyncHandler(async (req, res) => {
     const { fullName, email, username, password } = req.body;
-    // console.log(email);
 
-    if(
-        [fullName, email, username, password].some((field) => field.trim() === "")
-    ) {
-        throw new ApiError(400, "All fields are required")
+    if ([fullName, email, username, password].some((field) => !field?.trim())) {
+        throw new ApiError(400, "All fields are required");
     }
 
-    const userExists = await User.findOne({
-        $or: [{ username }, { email }]
-     })
+    const userExists = await User.findOne({ $or: [{ username }, { email }] });
+    if (userExists) {
+        throw new ApiError(409, "User with same username or email already exists");
+    }
 
-     if(userExists) {
-        throw new ApiError(409, "User with same username or email already exists")
-     }
+    const otp = generateOtp();
+    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
 
-     const user = await User.create({
+    const user = await User.create({
         username: username.toLowerCase(),
         email,
         fullName,
-        password
-     })
+        password,
+        isVerified: false,
+        otp,
+        otpExpiry,
+    });
 
-     const createdUser = await User.findById(user._id).select("-password -refreshToken")
+    await sendOtpEmail(email, otp);
 
-     if(!createdUser) {
-        throw new ApiError(500, "Somthing went wrong, User creation failed")
-     }
+    const createdUser = await User.findById(user._id).select("-password -refreshToken -otp");
 
-     res.status(201).json(
-        new ApiResponse(201, createdUser, "User created successfully")
-     )
-})
+    res.status(201).json(
+        new ApiResponse(201, createdUser, "Registration successful. Please verify your email with the OTP sent.")
+    );
+});
+
+const verifyOtp = asyncHandler(async (req, res) => {
+    const { email, otp } = req.body;
+
+    if (!email || !otp) {
+        throw new ApiError(400, "Email and OTP are required");
+    }
+
+    const user = await User.findOne({ email });
+    if (!user) {
+        throw new ApiError(404, "User not found");
+    }
+
+    if (user.isVerified) {
+        throw new ApiError(400, "Email already verified");
+    }
+
+    if (user.otp !== otp) {
+        throw new ApiError(400, "Invalid OTP");
+    }
+
+    if (user.otpExpiry < new Date()) {
+        throw new ApiError(400, "OTP has expired, please request a new one");
+    }
+
+    user.isVerified = true;
+    user.otp = undefined;
+    user.otpExpiry = undefined;
+    await user.save({ validateBeforeSave: false });
+
+    res.status(200).json(new ApiResponse(200, {}, "Email verified successfully"));
+});
+
+const resendOtp = asyncHandler(async (req, res) => {
+    const { email } = req.body;
+
+    if (!email) throw new ApiError(400, "Email is required");
+
+    const user = await User.findOne({ email });
+    if (!user) throw new ApiError(404, "User not found");
+    if (user.isVerified) throw new ApiError(400, "Email already verified");
+
+    const otp = generateOtp();
+    user.otp = otp;
+    user.otpExpiry = new Date(Date.now() + 10 * 60 * 1000);
+    await user.save({ validateBeforeSave: false });
+
+    await sendOtpEmail(email, otp);
+
+    res.status(200).json(new ApiResponse(200, {}, "OTP resent successfully"));
+});
+
+const forgotPassword = asyncHandler(async (req, res) => {
+    const { email } = req.body;
+
+    if (!email?.trim()) {
+        throw new ApiError(400, "Email is required");
+    }
+
+    const user = await User.findOne({ email });
+    if (!user) {
+        throw new ApiError(404, "No account found with this email");
+    }
+
+    const otp = generateOtp();
+    user.otp = otp;
+    user.otpExpiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes
+    await user.save({ validateBeforeSave: false });
+
+    await sendOtpEmail(user.email, otp);
+
+    return res
+        .status(200)
+        .json(new ApiResponse(200, {}, "Password reset OTP sent to your email"));
+});
+
+const resetPassword = asyncHandler(async (req, res) => {
+    const { email, otp, newPassword } = req.body;
+
+    if (!email || !otp || !newPassword) {
+        throw new ApiError(400, "Email, OTP, and new password are required");
+    }
+
+    const user = await User.findOne({ email });
+    if (!user) {
+        throw new ApiError(404, "No account found with this email");
+    }
+
+    if (user.otp !== otp) {
+        throw new ApiError(400, "Invalid OTP");
+    }
+
+    if (user.otpExpiry < new Date()) {
+        throw new ApiError(400, "OTP has expired, please request a new one");
+    }
+
+    user.password = newPassword; // pre("save") hook hashes it automatically
+    user.otp = undefined;
+    user.otpExpiry = undefined;
+    user.refreshToken = undefined; // force logout of any existing sessions after password reset
+    await user.save({ validateBeforeSave: false });
+
+    return res
+        .status(200)
+        .json(new ApiResponse(200, {}, "Password reset successfully. Please log in with your new password."));
+});
 
 const loginUser = asyncHandler(async (req, res) => {
   const { username, email, password } = req.body;
@@ -76,6 +181,11 @@ const loginUser = asyncHandler(async (req, res) => {
   if (!user) {
     throw new ApiError(404, "User does not exist");
   }
+
+
+  if (!user.isVerified) {
+    throw new ApiError(403, "Please verify your email before logging in");
+}
 
   const isPasswordValid = await user.isPasswordCorrect(password);
   if (!isPasswordValid) {
@@ -210,4 +320,16 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
         .cookie("refreshToken", newRefreshToken, cookieOptions)
         .json(new ApiResponse(200, { accessToken, refreshToken: newRefreshToken }, "Access token refreshed"));
 });
-export { registerUser, loginUser, logoutUser, changePassword, changeUsername, refreshAccessToken };
+
+
+export { registerUser,
+         loginUser, 
+         logoutUser, 
+         changePassword, 
+         changeUsername, 
+         refreshAccessToken, 
+         verifyOtp, 
+         resendOtp,
+         forgotPassword,
+         resetPassword
+        };
