@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { Settings, LogOut, User } from "lucide-react";
 import { apiFetch } from "@/lib/api";
 import { useAuth } from "@/context/AuthContext";
 
@@ -12,10 +13,9 @@ export default function Navbar() {
         try {
             await apiFetch("/users/logout", { method: "POST" });
         } catch (err) {
-            // even if the backend call fails, still clear local state
-            console.error("Logout request failed:", err.message);
+            console.error(err.message);
         } finally {
-            logout(); // clears localStorage + React state
+            logout();
             router.push("/login");
         }
     }
@@ -23,23 +23,32 @@ export default function Navbar() {
     if (!user) return null;
 
     return (
-        <nav
-            style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "12px 24px",
-                borderBottom: "1px solid #ddd",
-            }}
-        >
-            <a href="/dashboard" style={{ fontWeight: "bold", textDecoration: "none" }}>
-                AI Interview Prep
+        <nav className="bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between sticky top-0 z-10">
+            <a href="/dashboard" className="text-xl font-bold text-gray-900 tracking-tight">
+                tyareee
             </a>
 
-            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span>{user.fullName || user.username}</span>
-                <button onClick={handleLogout} style={{ padding: "6px 12px" }}>
-                    Logout
+            <div className="flex items-center gap-2">
+                <button
+                    onClick={() => router.push("/profile")}
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm text-gray-600 hover:bg-gray-100 transition-colors"
+                >
+                    <User className="w-4 h-4" />
+                    {user.fullName || user.username}
+                </button>
+
+                <button
+                    onClick={() => router.push("/settings")}
+                    className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 transition-colors"
+                >
+                    <Settings className="w-4 h-4" />
+                </button>
+
+                <button
+                    onClick={handleLogout}
+                    className="p-2 rounded-lg text-gray-500 hover:bg-gray-100 transition-colors"
+                >
+                    <LogOut className="w-4 h-4" />
                 </button>
             </div>
         </nav>
