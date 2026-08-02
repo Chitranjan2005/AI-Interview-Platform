@@ -15,7 +15,7 @@ const DIFFICULTY_STYLES = {
     Hard: "bg-red-50 text-red-700",
 };
 
-function ScoreBar({ label, score, icon: Icon }) {n
+function ScoreBar({ label, score, icon: Icon }) {
     return (
         <div>
             <div className="flex items-center justify-between mb-1">
