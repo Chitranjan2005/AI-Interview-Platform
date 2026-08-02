@@ -15,7 +15,7 @@ const submitAnswer = asyncHandler(async (req, res) => {
     const question = await Question.findById(questionId);
     if (!question) throw new ApiError(404, "Question not found");
 
-    const feedback = await generateFeedback(question.title, answer);
+    const feedback = await generateFeedback(question.title, answer, question.difficulty);
 
     const session = await PracticeSession.findOneAndUpdate(
         { _id: sessionId, user: req.user._id },
@@ -29,5 +29,7 @@ const submitAnswer = asyncHandler(async (req, res) => {
         .status(200)
         .json(new ApiResponse(200, { sessionId: session._id, feedback }, "Feedback generated and saved"));
 });
+
+
 
 export { submitAnswer };

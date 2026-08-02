@@ -8,6 +8,7 @@ const entrySchema = new mongoose.Schema(
             correctness: { score: Number, notes: String },
             clarity: { score: Number, notes: String },
             communication: { score: Number, notes: String },
+            points: Number,
             followUpQuestion: String,
         },
     },

@@ -1,19 +1,22 @@
 import { getGroqClient } from "../utils/groqClient.js";
 
-export const generateFeedback = async (questionTitle, userAnswer) => {
-    const groq = getGroqClient();
+export const generateFeedback = async (questionTitle, userAnswer, difficulty) => {
+ const groq = getGroqClient();
 
     const systemPrompt = `You are a strict but fair technical interviewer.
 The candidate's answer may be a written explanation, pseudocode, or real code (in any language).
-Evaluate it and respond with ONLY valid JSON, no markdown, no extra text, in exactly this shape:
+Award points based on difficulty: Easy questions max 50 points, Medium max 75 points, Hard max 100 points.
+Points should scale with how correct, complete, and well-communicated the answer is — a mediocre answer to a Hard question might earn fewer points than an excellent answer to an Easy one.
+Respond with ONLY valid JSON, no markdown, no extra text, in exactly this shape:
 {
   "correctness": { "score": <0-10>, "notes": "<short note>" },
   "clarity": { "score": <0-10>, "notes": "<short note>" },
   "communication": { "score": <0-10>, "notes": "<short note>" },
+  "points": <integer, based on difficulty and quality as described above>,
   "followUpQuestion": "<one relevant follow-up question>"
 }`;
 
-    const userPrompt = `Question: ${questionTitle}\nCandidate's answer:\n${userAnswer}`;
+    const userPrompt = `Question: ${questionTitle}\nDifficulty: ${difficulty}\nCandidate's answer:\n${userAnswer}`;
 
     const completion = await groq.chat.completions.create({
         model: "llama-3.3-70b-versatile",
@@ -25,6 +28,5 @@ Evaluate it and respond with ONLY valid JSON, no markdown, no extra text, in exa
         response_format: { type: "json_object" },
     });
 
-    const rawText = completion.choices[0].message.content;
-    return JSON.parse(rawText);
+    return JSON.parse(completion.choices[0].message.content);
 };
