@@ -8,12 +8,19 @@ import {
 } from "lucide-react";
 import { apiFetch } from "@/lib/api";
 import ProtectedRoute from "@/components/ProtectedRoute";
+import AnswerInput from "@/components/AnswerInput";
 
 const DIFFICULTY_STYLES = {
     Easy: "bg-emerald-50 text-emerald-700",
     Medium: "bg-amber-50 text-amber-700",
     Hard: "bg-red-50 text-red-700",
 };
+
+function formatTime(seconds) {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${s.toString().padStart(2, "0")}`;
+}
 
 function ScoreBar({ label, score, icon: Icon }) {
     return (
@@ -32,7 +39,9 @@ function ScoreBar({ label, score, icon: Icon }) {
 }
 
 function InterviewContent() {
-    const sheetId = useSearchParams().get("sheetId");
+    const searchParams = useSearchParams();
+    const sheetId = searchParams.get("sheetId");
+    const durationParam = searchParams.get("duration");
     const router = useRouter();
 
     const [sessionId, setSessionId] = useState(null);
@@ -44,6 +53,8 @@ function InterviewContent() {
     const [loading, setLoading] = useState(true);
     const [submitting, setSubmitting] = useState(false);
     const [error, setError] = useState("");
+    const [timeLeft, setTimeLeft] = useState(null);
+    const [timeUp, setTimeUp] = useState(false);
 
     useEffect(() => {
         async function startPractice() {
@@ -60,6 +71,25 @@ function InterviewContent() {
         }
         if (sheetId) startPractice();
     }, [sheetId]);
+
+    useEffect(() => {
+        if (!durationParam) return;
+        setTimeLeft(Number(durationParam) * 60);
+
+        const interval = setInterval(() => {
+            setTimeLeft((prev) => {
+                if (prev === null) return null;
+                if (prev <= 1) {
+                    clearInterval(interval);
+                    setTimeUp(true);
+                    return 0;
+                }
+                return prev - 1;
+            });
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [durationParam]);
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -129,9 +159,16 @@ function InterviewContent() {
             <div className="max-w-3xl mx-auto px-6 py-10">
                 <div className="flex items-center justify-between mb-6">
                     <span className="text-xs font-medium text-gray-500">{sheetName}</span>
-                    <span className="text-xs font-medium text-gray-500">
-                        Question {currentIndex + 1} of {questions.length}
-                    </span>
+                    <div className="flex items-center gap-3">
+                        {timeLeft !== null && (
+                            <span className={`text-xs font-mono font-semibold ${timeLeft < 60 ? "text-red-600" : "text-gray-500"}`}>
+                                {formatTime(timeLeft)}
+                            </span>
+                        )}
+                        <span className="text-xs font-medium text-gray-500">
+                            Question {currentIndex + 1} of {questions.length}
+                        </span>
+                    </div>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
@@ -198,14 +235,7 @@ function InterviewContent() {
 
                 {!feedback ? (
                     <form onSubmit={handleSubmit} className="mt-4">
-                        <textarea
-                            value={answer}
-                            onChange={(e) => setAnswer(e.target.value)}
-                            placeholder="Write your approach, pseudocode, or code here…"
-                            rows={10}
-                            required
-                            className="w-full p-4 border border-gray-200 rounded-2xl text-sm font-mono bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-900/10"
-                        />
+                        <AnswerInput value={answer} onChange={setAnswer} />
                         {error && <p className="text-sm text-red-600 bg-red-50 px-3 py-2 rounded-lg mt-3">{error}</p>}
                         <button
                             type="submit"
@@ -248,6 +278,21 @@ function InterviewContent() {
                     </div>
                 )}
             </div>
+
+            {timeUp && (
+                <div className="fixed inset-0 bg-black/40 flex items-center justify-center p-6 z-50">
+                    <div className="w-full max-w-sm bg-white rounded-2xl shadow-xl p-6 text-center">
+                        <h2 className="text-lg font-bold text-gray-900">Time&apos;s up</h2>
+                        <p className="text-sm text-gray-500 mt-2">Your session time has ended.</p>
+                        <button
+                            onClick={() => router.push("/dashboard")}
+                            className="mt-5 w-full bg-gray-900 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+                        >
+                            Back to dashboard
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

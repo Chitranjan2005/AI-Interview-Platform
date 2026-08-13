@@ -1,4 +1,5 @@
 "use client";
+import DurationPicker from "@/components/DurationPicker";
 
 import { useEffect, useState } from "react";
 import { apiFetch } from "@/lib/api";
@@ -12,7 +13,13 @@ const DIFFICULTY_STYLES = {
     Hard: "bg-red-50 text-red-700",
 };
 
+
 function DashboardContent() {
+    const [selectedSheet, setSelectedSheet] = useState(null);
+
+function handleConfirmDuration(minutes) {
+    router.push(`/interview/start?sheetId=${selectedSheet._id}&duration=${minutes}`);
+}
     const [sheets, setSheets] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -103,7 +110,7 @@ function DashboardContent() {
                             </div>
 
                             <button
-                                onClick={() => router.push(`/interview/start?sheetId=${sheet._id}`)}
+                                onClick={() => setSelectedSheet(sheet)}
                                 className="mt-4 w-full bg-gray-900 text-white py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors"
                             >
                                 Start practice <ArrowRight className="w-4 h-4" />
@@ -116,6 +123,13 @@ function DashboardContent() {
                     <p className="text-sm text-gray-400 mt-10 text-center">No sheets match these filters.</p>
                 )}
             </div>
+            {selectedSheet && (
+          <DurationPicker
+        sheetName={selectedSheet.name}
+        onConfirm={handleConfirmDuration}
+        onClose={() => setSelectedSheet(null)}
+    />
+)}
         </div>
     );
 }
