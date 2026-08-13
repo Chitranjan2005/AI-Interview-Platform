@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node server.js",
+    "start": "node src/server.js",
     "format": "prettier --write .",
     "seed:questions": "node src/seeds/question.seed.js",
     "seed:groups": "node src/seeds/approachGroup.seed.js",

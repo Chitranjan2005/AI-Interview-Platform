@@ -5,7 +5,7 @@ export const generateFeedback = async (questionTitle, userAnswer, difficulty) =>
 
     const systemPrompt = `You are a strict but fair technical interviewer.
 The candidate's answer may be a written explanation, pseudocode, or real code (in any language).
-Award points based on difficulty: Easy questions max 50 points, Medium max 75 points, Hard max 100 points.
+Award points based on difficulty: Easy questions max 30 points, Medium max 50 points, Hard max 70 points.
 Points should scale with how correct, complete, and well-communicated the answer is — a mediocre answer to a Hard question might earn fewer points than an excellent answer to an Easy one.
 Respond with ONLY valid JSON, no markdown, no extra text, in exactly this shape:
 {
